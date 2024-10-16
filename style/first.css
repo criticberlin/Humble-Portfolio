@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80vw;
+    height: 80vh;
+}
+
+header{
+    background: rgba(97, 97, 97, 0);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    width: 100%;
+    position:fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 90px;
+}
+
+
+.logo{
+    transition: 0.1s ease;
+}
+
+
+.logo:hover{
+scale: 1.2;
+filter: brightness(80%);
+}
+
+.navigation a{
+    color: red;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    transition: 0.1s ease;
+}
+
+.navigation a:hover{
+    color: darkgray;
+    font-size: 1.2em;
+    padding-block: 5px;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+
+.Main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/MyBackground.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.Main h2{
+    color: white;
+    font-size: 2em;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: h-shadow v-shadow blur-radius ;
+    text-transform :uppercase;
+}
+
+.Main h2 span{
+    display: inline-block;
+    margin-top: 5%px;
+    color: Red;
+    font-size: 2.7em;
+    font-weight: 600;
+}
+
+.Main h3{
+    color: red;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: h-shadow v-shadow blur-radius ;
+}
+
+.Main h3 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    font-size: 0.545em;
+    font-weight: 350;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 655px;
+    text-shadow: h-shadow v-shadow blur-radius ;
+}
+
+
+.main-btn{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    border-radius: 30px;
+    margin-bottom: 0px;
+    transition: 0.1s ease;
+}
+
+.main-btn:hover{
+    background-color: #8b0000;
+    transform: scale(1.1);
+}
+
+.social-icons a{
+    color: red;
+    font-size: 1.7em;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    transition: 0.1s ease;
+}
+
+.social-icons a:hover{
+    color: #981010;
+    font-size: 2.5em;
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards#skills{
+    background: #272727;
+    position:relative;
+    z-index: 2;
+}
+
+.card{
+    background-color: #272727;
+    width: 25em;
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    padding: 40px;
+    margin: 30px;
+    transition: 0.1s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: red;
+    font-size: 6em;
+    text-align: center;
+}
+
+.info{
+    color: white;
+    font-weight: 200;
+    text-align: center;
+}
+
+.info h3{
+    color: red;
+    font-size: 1.56em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #272727;
+    position:relative;
+    z-index: 3;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #272727;
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.15);
+    border: 1px solid darkgray;
+    min-height: 14em;
+    width: 60em;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 20px;
+    transition: 0.1s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: red
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.project-title span {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: red;
+}
+
+.more-details:hover {
+    color: darkgrey;
+}
